@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>JQuery</title>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <style type="text/css">
+
+      #bigSquare {
+
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        margin-bottom: 10px;
+
+      }
+
+      #littleSquare {
+
+        width: 150px;
+        height: 150px;
+        background-color: black;
+
+      }
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div id="bigSquare"></div>
+
+    <div id="littleSquare"></div>
+
+    <script type="text/javascript">
+
+          $( "#littleSquare" ).draggable();
+
+          $( "#bigSquare" ).droppable({
+
+            drop: function( event, ui ) {
+
+              alert("Yo! What you think you doing bro!?")
+
+            }
+
+          });
+
+    </script>
+
+  </body>
+</html>

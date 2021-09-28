@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>JQuery</title>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <style type="text/css">
+
+      #containment-wrapper {
+
+        width: 95%;
+        height:150px;
+        border:2px
+        solid #ccc;
+        padding: 10px;
+
+      }
+
+      #resizable {
+
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+
+      #also {
+
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="containment-wrapper">
+      <div id="containedDraggable">
+        <span>Drag me around inside this div</span>
+      </div>
+    </div>
+
+    <div id="draggable">
+      <p>Drag me up and down</p>
+    </div>
+
+    <div id="draggable2">
+      <p>Drag me around</p>
+    </div>
+
+    <div id="draggable3">
+      <p>Drag me back and forth</p>
+    </div>
+
+    <div id="resizable">
+      <h3>Resize meee!</h3>
+    </div>
+
+    <div id="also">
+      <h3>Resize meee!</h3>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+      $( "#containedDraggable" ).draggable({ containment: "#containment-wrapper", scroll: false });
+
+      $( "#draggable" ).draggable({ axis: "y" });
+
+      $( "#draggable3" ).draggable({ axis: "x" });
+
+      $( "#draggable2" ).draggable();
+
+      $( "#resizable" ).resizable({
+        grid:50,
+        alsoResize: "#also",
+        resize: function( event, ui ) {
+
+          if ($("#resizable").width() > 300) {
+
+            alert("big enough!");
+
+          };
+
+        }
+      });
+
+      $( "#also" ).resizable();
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+    <style type:"text/css">
+
+      .sirkel {
+
+        width:150px;
+        height:150px;
+        border-radius: 50%;
+        float:left;
+        margin:20px;
+
+      }
+
+      #rød-sirkel {
+        background-color: red;
+      }
+
+      #grønn-sirkel {
+        background-color: green;
+      }
+
+      #blå-sirkel {
+        background-color: blue;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="sirkel" id="rød-sirkel"></div>
+
+    <div class="sirkel" id="grønn-sirkel"></div>
+
+    <div class="sirkel" id="blå-sirkel"></div>
+
+
+    <script type="text/javascript">
+
+      document.getElementById("rød-sirkel").onclick = function() {
+
+        document.getElementById("rød-sirkel").style.display = "none";
+      }
+
+      document.getElementById("grønn-sirkel").onclick = function() {
+
+        document.getElementById("grønn-sirkel").style.display = "none";
+      }
+
+      document.getElementById("blå-sirkel").onclick = function() {
+
+        document.getElementById("blå-sirkel").style.display = "none";
+      }
+
+    </script>
+
+  </body>
+
+</html>

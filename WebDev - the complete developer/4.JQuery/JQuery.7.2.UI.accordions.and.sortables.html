@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>JQuery</title>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+    <style type="text/css">
+
+    .list {
+      width: 200px;
+      margin: 6px 3px 3px 3px;
+      padding: 0.4em;
+      padding-left: 1em;
+      font-size: 1.4em;
+      height: 18px;
+      background-color: red;
+    }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h2>Prioriteringer i livet</h2>
+    <ul id="sortable">
+      <li class="list">Eventyr</li>
+      <li class="list">Stabilitet</li>
+      <li class="list">Sex</li>
+    </ul>
+
+    <h2>Frans Joakim-trekkspillet</h2>
+    <div id="accordion">
+      <h3>Håp</h3>
+      <div>
+        <p>
+        Mitt håp er at jeg vil finne stabilitet, utfordringer og eventyr sammen med noen jeg er grad i, tiltrukket av og som jeg respekterer, både på bakgrunn av måten denne personen lever livet sitt og i åpen fasinasjon.
+        </p>
+      </div>
+      <h3>Drømmer</h3>
+      <div>
+        <p>
+        Jeg drømmer om å drive med innholdsproduksjon samtidig som jeg ønsker å bygge en organisasjon, tjeneste, og systemene som setter premissene for innholdets økonomiske, politiske og kulturelle slagkraft!
+        </p>
+      </div>
+      <h3>Frykt</h3>
+      <div>
+        <p>
+        Jeg opplever å ha en del frykt, fordi mye er usikkert. Kanskje finner jeg ingen jeg virkelig elsker, eller eventyret jeg søker. Kanskje opplever jeg å lære at drømmer er for barn og at jeg selv ikke har greid å opptre ansvarlig eller på en voksen måte.
+        </p>
+        <p>Ting som gjør meg redd</p>
+        <ul>
+          <li>Å føle meg ensom, med eller uten kjæreste</li>
+          <li>Å føle meg utbetydelig, grå og vanlig</li>
+          <li>Å oppleve økonomisk ruinering og/eller tvang</li>
+          <li>Å dø uten å ha opplevd denne verden</li>
+        </ul>
+      </div>
+      <h3>Traumer</h3>
+      <div>
+        <p>
+        Jeg opplever at familielivet når jeg vokste opp var mer turbulent enn hva jeg tror er vanlig. Jeg bærer med meg relasjonelle traumer som er synlig fra utsiden i form av det jeg selv opplever som mangler, slik som en kjæreste.
+        </p>
+        <p>
+        Mine forrelde tok ikke godt nok vare på meg, og spesielt mine følelsesmessige behov. I familen følte vi på et press, både økonomisk og fra en ego-sentrisk mann. Jeg ble overlatt til meg selv og en traumatisert søster. Mine relasjoner føles i dag uttrygge og jeg føler meg desperat på aksept og nærhet samtidig som jeg lever i delvis frivillig isolasjon.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+
+          $( "#accordion" ).accordion();
+
+          $( "#sortable" ).sortable();
+
+    </script>
+
+  </body>
+</html>

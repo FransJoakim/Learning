@@ -1,0 +1,46 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+    <style media="screen">
+
+      #btn {
+
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Test Your Reaction!</h1>
+
+    <p>Click on the boxes and circles as quick as you can!</p>
+
+    <p id="yourTime"></p>
+
+    <div id="btn"></div>
+
+
+    <script type="text/javascript">
+
+    var btn = document.getElementById("btn");
+btn.style.top = Math.floor((Math.random() * 430) + 150) + "px";
+btn.style.left = Math.floor((Math.random() * 800) + 1) + "px";
+
+
+
+    </script>
+
+  </body>
+
+</html>

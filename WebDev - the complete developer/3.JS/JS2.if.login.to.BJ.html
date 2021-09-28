@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+
+  </head>
+
+  <body>
+
+    <p>Hva er det magiske ordet!?</p>
+
+    <input id="input">
+
+    <button id="checkInput">submit</button>
+
+
+    <script type="text/javascript">
+
+    document.getElementById("checkInput").onclick = function() {
+
+      var forslagMagiskOrd = document.getElementById("input").value;
+
+      var detMagiskeOrdet = "bananpikk";
+
+      if(forslagMagiskOrd == detMagiskeOrdet) {
+
+        alert("Mmmm, Namm Namm!");
+
+      } else {
+
+        alert("Mmm, sorry men nei takk..");
+        
+      }
+
+    }
+
+    </script>
+
+  </body>
+
+</html>

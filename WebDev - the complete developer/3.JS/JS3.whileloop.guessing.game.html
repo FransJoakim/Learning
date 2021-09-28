@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+
+  </head>
+
+  <body>
+
+    <p>Mr. computer, guess how many fingers I'm holding up</p>
+
+    <select id="fingersHeldUp">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+   <button id="computerGuess">Nr. of fingers raised under table</button>
+
+
+    <script type="text/javascript">
+
+      document.getElementById("computerGuess").onclick = function() {
+
+        var fingersHeldUp = document.getElementById("fingersHeldUp").value;
+
+        var gotIt = false;
+
+        var numberOfGuesses = 1
+
+        while (gotIt == false)  {
+
+          var guess = Math.random();
+
+          guess = guess * 6;
+
+          guess = Math.floor(guess);
+
+          if (guess == fingersHeldUp) {
+
+            gotIt = true;
+
+            alert("Daaamen computerboy! That's right. I held up " + guess + " fingers. Think that took you " + numberOfGuesses + " tries. Well done though :)");
+
+          } else {
+
+            numberOfGuesses++;
+          }
+
+
+        }
+
+      }
+
+    </script>
+
+  </body>
+
+</html>

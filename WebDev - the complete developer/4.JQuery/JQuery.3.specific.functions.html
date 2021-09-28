@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style type="text/css">
+
+      #circle {
+
+        width:100px;
+        height:100px;
+        background-color: green;
+        border-radius: 50%;
+        margin:20px;
+
+      }
+
+      .square {
+
+        width:100px;
+        height:100px;
+        background-color: red;
+        margin:20px;
+
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <p id="text1" style="display:none">Example text 1</p>
+
+    <button id="toggle1">Toggle text (hidden)</button>
+
+
+    <p id="text2">Example text 2</p>
+
+    <button id="toggle2">Toggle text</button>
+
+
+    <script type="text/javascript">
+
+    $("#toggle1").click(function() {
+
+      if ($("#text1").css("display") == "none") {
+
+      $("#text1").fadeIn();
+
+      } else {
+
+      $("#text1").fadeOut();
+
+      }
+
+    });
+
+    var textDisplay = true;
+
+    $("#toggle2").click(function() {
+
+      if (textDisplay) {
+
+        $("#text2").fadeOut(function() {
+
+          textDisplay = false;
+
+        });
+
+      } else {
+
+        $("#text2").fadeIn(function() {
+
+          textDisplay = true;
+
+        });
+
+      }
+
+    });
+
+
+    </script>
+
+  </body>
+</html>
